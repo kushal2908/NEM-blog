@@ -1,0 +1,53 @@
+<%- include('./partials/head.ejs') %> 
+<%- include('./partials/nav.ejs') %> 
+
+<!-- <a class="delete" data-doc="<%= blog._id %>"> </a> -->
+
+<section class="single" style="padding: 30px;" >
+    <div class="container">
+        
+        <div class="row">
+            <div class="col-md-10">
+                <h1 style="padding-top: 0px;" > <%= blog.title  %>  </h1>
+
+            </div>
+
+            <div class="col-md-2 d-flex justify-content-end align-items-start">     
+                <a class="delete btn btn-sm btn-danger" data-doc="<%= blog._id %>"> Delete </a> 
+            </div>
+            
+        </div>
+        
+        <p><%= blog.createdAt %></p>
+        <p> <%= blog.description %>  </p>        
+        
+        
+    </div>
+</section>
+
+<script>
+
+    //Its and AJAX Request
+    const trashcan = document.querySelector('a.delete');
+
+    trashcan.addEventListener('click', (e)=>{
+        const endpoint = `/blogs/${trashcan.dataset.doc}`;
+
+        fetch( endpoint, {   
+            method: 'DELETE'
+        })
+        .then((response) => response.json()) //we have to response in json then we can redirect.
+        .then((data) => window.location.href = data.redirect) 
+        .catch((err) =>console.log(err))
+    })
+</script>
+
+
+
+
+
+
+
+
+
+<%- include('./partials/footer.ejs') %> 

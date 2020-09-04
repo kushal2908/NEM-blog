@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;600&display=swap');
+
+body {
+    background-color: #f1f1f1;
+    font-family: 'Montserrat', sans-serif;
+}
+
+nav{ 
+
+    background-color: #f1f1f1!important;
+    box-shadow: 1px 1px 8px rgba(87, 87, 87, 0.2);
+}
+
+.navbar-nav {
+    font-size:18px!important;
+    font-weight: 500;   
+}
+
+
+/* ====================================
+            ABOUT
+====================================*/
+
+.home-content {
+    padding: 30px 0px;
+}
+
+
+.home-content h1 {
+    padding: 20px 0px;
+    color: #424242;  
+    font-size: 70px;
+    font-weight: 800;
+    letter-spacing: -2px;
+    font-family: 'Playfair Display', serif;
+}
+.home-content h2 {
+    font-size: 38px;
+    color:  #424242;
+    padding-top: 0px;    
+    padding-bottom: 0px;
+    margin: 20px 0px;
+    text-align: left;
+    font-family: 'Playfair Display', serif;
+}
+
+.blog-content {
+    background-color: #ffffff;
+    padding: 20px;      
+    border-radius: 10px;
+    margin: 30px 0px 0px 0px;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2);    
+}
+
+.blog-content a {
+    text-decoration: none;
+    color: black;
+}
+
+.blog-content a:hover {
+    text-decoration: none;
+    color:black
+}
+
+.blog-time  {
+   font-size: 14px;
+}
+
+.blog-content:hover {
+    background-color: #ffffff;
+    padding: 20px;       
+    border-radius: 10px;
+    margin: 30px 0px 0px 0px;
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.4);   
+    transition: 0.3s; 
+}
+
+
+@media(max-width: 500px) {    
+
+    .blog-content {
+        background-color: #ffffff;
+        padding: 20px;             
+        border-radius: 10px;
+        margin: 10px 10px 10px 0px;
+        box-shadow: 0px 0px 1px rgba(0, 0, 0, 0.1);    
+    }    
+    .blog-content:hover {
+        background-color: #ffffff;
+        padding: 20px;            
+        border-radius: 10px;
+        margin: 10px 10px 10px 0px;
+        box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.3);    
+    }   
+    
+}
+
+/* ====================================
+            ABOUT
+====================================*/
+
+.about {
+    padding: 60px 0px;
+}
+
+.about h1 {
+    font-size: 70px;
+    font-weight: 800;
+    letter-spacing: -1px;;
+    color: #424242; 
+    font-family: 'Playfair Display', serif;
+} 
+
+.about p {
+
+    padding: 20px 0px;
+    font-size: 20px;
+}
+
+.single img {
+
+    width:10px;
+    height: 20px;
+
+}
+
+.blogs h2 {
+    font-size: 60px;
+    color:  #424242;
+    padding-top: 30px;    
+    padding-bottom: 0px;   
+    text-align: left;
+    font-family: 'Playfair Display', serif;
+}
+
+.footer {
+    padding:10px;
+    font-size: 18px;
+}
+

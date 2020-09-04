@@ -1,0 +1,16 @@
+# Node-Express-mongoDB Blog
+
+## This is a simple blog using 
+#### 1. NodeJS
+#### 2. ExpressJS
+#### 3. MongoDB
+
+This demo blog project is simple you can post and delete a blog here, well anyone can lol. I've followed **MVC pattern** here and **Bootstrap 4.5** for CSS and also some custom css. anyone can use it you dont need to ask.  
+
+#### Download/Clone Project
+**Open your terminal and type** 
+    `npm install`
+**Then to run the app type**
+    `npm run strat`
+    
+**PS: I used MongoDB ATLAS you have to copy you cluster URL and paste in the app.js line no 12**

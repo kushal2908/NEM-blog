@@ -1,0 +1,40 @@
+<%- include('./partials/head.ejs') %> 
+<%- include('./partials/nav.ejs') %> 
+
+    <section class=" container home">      
+
+      
+        <div class="container home-content">
+            <h1> Welcome to my blog </h1>
+            <hr>    
+            <h2 class=" animate__animated animate__fadeInUp"> Feature Blogs </h2>  
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="blog">
+                        <% if ( blogs.length > 0) { %> 
+                            <% blogs.forEach (blog => { %>
+    
+                                <div class="blog-content animate__animated animate__fadeInUp animate__delay-.2s">   
+                                    <a href="/blogs/<%= blog._id %> ">                                                                          
+                                        <h4 class="blog-title "> <%= blog.title %> </h4> 
+                                        <p class="blog-time"> <%= blog.createdAt %></p> <hr>
+                                        <p class="blog-description" > <%= blog.description %> </p>
+                                    </a>                                                                                                                       
+                                </div>        
+    
+                            <% }) %>
+                        <% } else { %>       
+                            <h3> No blogs to Display </h3>
+                        <% } %> <!--IF STATEMENT--> 
+    
+                    </div> <!--BLOG--> 
+                </div>
+            </div>            
+            <hr>
+
+        </div>          
+    </section>
+
+<%- include('./partials/footer.ejs') %> 
+
