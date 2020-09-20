@@ -9,7 +9,7 @@ const blogRoutes = require('./routes/blogRoutes')
 const Blog = require ('./model/blog') //for index page blogs otherwise we dont need to import this
 
 //Connection to MongoDB
-dbURI=" mongodb+srv://enforcer:kushal2908@express-mongodb-blog.cs7bm.mongodb.net/blogDB?retryWrites=true&w=majority ";
+dbURI=" YOUR_MONGODB_ATLAS_URI ";
 mongoose.connect(dbURI, {useNewUrlParser: true , useUnifiedTopology: true})
   .then( () => console.log('Connected to DB'))
   .catch ( (err) => console.log(err));
